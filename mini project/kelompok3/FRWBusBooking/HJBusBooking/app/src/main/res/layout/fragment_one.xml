@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cari Pemesanan Tiket:"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:freezesText="false"
+            android:text="1. Pilih Menu “Cari Keberangkatan” pada Side Bar
+            \n2. Pilih Kota Keberangkatan, Kota Tujuan, dan Tanggal Keberangkatan
+            \n3. Klik tombol “Cari”
+            \n4. Pilih bus seuai kelas yang diinginkan
+            \n5. Klik tombol ”Pesan”
+            \n6. Pilih “Lihat Detail” untuk membaca informasi tentang bus yang dipilih. Pilih “Pesan Sekarang” untuk melakukan pemesanan
+            \n7. Pilih nomor kursi yang diinginkan dari kursi yang tersedia
+        \n8. Klik tombol “Pesan” untuk memilih metode pembayaran
+        \n9. Pilih Pool Keberangkatan, Pool Tujuan, dan Bank yang dipilih untuk melakukan pembayaran, serta masukkan nama pemilik rekening yang akan digunakan
+        \n10. Klik tombol “Pesan” untuk mendapatkan kode booking
+        \n11. Setelah pemesanan berhasil dibuat, cetak tiket sementara dan lakukan konfirmasi setelah pembayaran berhasil dilakukan"
+            android:textAlignment="gravity"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

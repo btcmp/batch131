@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.bootcamp.xsisa.hjbusbooking.UpdateProfilUser">
+
+    <TextView
+        android:id="@+id/tSessionU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+
+            <com.pchmn.androidverify.Form
+                android:id="@+id/form1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                app:showErrors="false">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Nama Lengkap"
+                    android:layout_height="wrap_content" />
+
+                <com.pchmn.androidverify.InputValidator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:requiredMessage="Nama Tidak Boleh Kosong">
+
+
+
+                    <EditText
+                        android:id="@+id/tnama1"
+                        android:hint="Nama Lengkap"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ " />
+                </com.pchmn.androidverify.InputValidator>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Alamat Email"
+                    android:layout_height="wrap_content" />
+
+
+                <com.pchmn.androidverify.InputValidator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:required="true"
+                    app:requiredMessage="Email Tidak Boleh Kosong">
+
+
+                    <EditText
+                        android:id="@+id/temail1"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+                </com.pchmn.androidverify.InputValidator>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Nomor KTP"
+                    android:layout_height="wrap_content" />
+
+                <com.pchmn.androidverify.InputValidator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorMessage="Masukan No KTP Dengan Benar"
+                    app:maxLength="16"
+                    app:minLength="16"
+                    app:requiredMessage="No KTP Tidak Boleh Kosong">
+
+
+
+                    <EditText
+                        android:id="@+id/tnoktp1"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="No KTP"
+                        android:inputType="numberDecimal" />
+                </com.pchmn.androidverify.InputValidator>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Nomor HP"
+                    android:layout_height="wrap_content" />
+
+                <com.pchmn.androidverify.InputValidator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:maxLength="12"
+                    app:minLength="11"
+                    app:errorMessage="Masukan No HP Dengan Benar"
+                    app:requiredMessage="No HP Tidak Boleh Kosong">
+
+
+                    <EditText
+                        android:id="@+id/tnohp1"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="No HP"
+                        android:inputType="numberDecimal" />
+                </com.pchmn.androidverify.InputValidator>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Alamat Lengkap"
+                    android:layout_height="wrap_content" />
+
+                <com.pchmn.androidverify.InputValidator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:requiredMessage="Alamat Tidak Boleh Kosong">
+
+
+
+                    <EditText
+                        android:id="@+id/talamat1"
+                        android:layout_marginTop="5dp"
+                        android:hint="Alamat Lengkap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.pchmn.androidverify.InputValidator>
+
+            </com.pchmn.androidverify.Form>
+
+            <CheckBox
+                android:id="@+id/cbUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Yakin memperbaharui data diri anda?" />
+
+            <Button
+                android:id="@+id/save1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:text="update profil" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

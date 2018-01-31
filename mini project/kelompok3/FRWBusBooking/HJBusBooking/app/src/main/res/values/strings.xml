@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Harapan Jaya Bus</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--In Main Activity and Side Bar-->
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="win_fmain">Cari Keberangkatan</string>
+    <string name="win_frag2">Data Diri</string>
+    <string name="win_frag3">Konfirmasi Pemesanan</string>
+    <string name="win_frag4">Tata Cara</string>
+    <string name="win_frag5">Hubungi Pengembang</string>
+
+    <string name="tittle3">Riwayat dan Konfirmasi Pemesanan</string>
+    <string name="title1">Tiket Sementara</string>
+    <string name="title2">Detail Riwayat Pemesanan</string>
+    <string name="title3">Konfirmasi Pembayaran</string>
+
+    <string name="cari">Cari Keberangkatan</string>
+    <string name="pemesanan">Pemesanan</string>
+    <string name="detail">Detail Bis</string>
+    <string name="contact">Hubungi Kami</string>
+
+    <string-array name="activity_titles">
+        <item>Harapan Jaya Bus</item>
+        <item>Data Diri</item>
+    </string-array>
+
+</resources>

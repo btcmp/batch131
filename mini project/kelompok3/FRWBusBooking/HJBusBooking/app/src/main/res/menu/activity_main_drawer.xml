@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/win_frmain"
+            android:checked="false"
+            android:icon="@drawable/map_marker_radius"
+            android:title="@string/win_fmain" />
+
+        <item
+            android:id="@+id/win_fr2"
+            android:checked="false"
+            android:icon="@drawable/account_card_details"
+            android:title="@string/win_frag2" />
+    </group>
+
+    <item
+        android:id="@+id/navigasi_2"
+        android:title="Riwayat">
+
+        <menu>
+            <item
+                android:id="@+id/win_fr3"
+                android:checked="false"
+                android:icon="@drawable/ticket_confirmation"
+                android:title="@string/win_frag3" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/navigasi_3"
+        android:title="Tentang">
+        <menu>
+            <item
+                android:id="@+id/win_fr4"
+                android:checked="false"
+                android:icon="@drawable/bus_side"
+                android:title="@string/win_frag4" />
+            <item
+                android:id="@+id/win_fr5"
+                android:checked="false"
+                android:icon="@drawable/phone"
+                android:title="@string/win_frag5" />
+            <item
+                android:id="@+id/win_logout"
+                android:checked="false"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+
+
+</menu>

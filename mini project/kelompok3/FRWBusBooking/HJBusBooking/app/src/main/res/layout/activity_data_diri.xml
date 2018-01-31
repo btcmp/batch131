@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.bootcamp.xsisa.hjbusbooking.DataDiri">
+
+    <TextView
+        android:id="@+id/tsession"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="vertical">
+
+
+                <com.pchmn.androidverify.Form
+                    android:id="@+id/form1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:showErrors="false">
+
+                    <com.pchmn.androidverify.InputValidator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:maxLength="16"
+                        app:minLength="16"
+                        app:requiredMessage="Masukan Dengan Benar">
+
+
+                        <EditText
+                            android:id="@+id/tnoktp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="No KTP"
+                            android:inputType="numberDecimal" />
+                    </com.pchmn.androidverify.InputValidator>
+
+                    <com.pchmn.androidverify.InputValidator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:maxLength="12"
+                        app:minLength="11"
+                        app:requiredMessage="Masukan Dengan Benar">
+
+
+                        <EditText
+                            android:id="@+id/tnohp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="No HP"
+                            android:inputType="numberDecimal" />
+                    </com.pchmn.androidverify.InputValidator>
+
+                    <com.pchmn.androidverify.InputValidator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:minLength="5"
+                        android:layout_marginTop="5dp"
+                        app:requiredMessage="Masukan Alamat Dengan Benar">
+
+
+                        <EditText
+                            android:id="@+id/talamat"
+                            android:hint="Alamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.pchmn.androidverify.InputValidator>
+
+
+                </com.pchmn.androidverify.Form>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:rv_centered="true"
+                        app:rv_color="@color/colorAccent">
+
+                        <Button
+                            android:id="@+id/save"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Register" />
+
+                    </com.andexert.library.RippleView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

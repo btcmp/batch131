@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.bootcamp.xsisa.hjbusbooking">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".FormRegister" />
+        <activity android:name=".MenuUtama" />
+        <activity android:name=".UpdateProfilUser" />
+        <activity android:name=".DataDiri" />
+        <activity android:name=".CariKeberangkatan" />
+        <activity android:name=".HasilCariKeberangkatan" />
+        <activity android:name=".DetailBus" />
+        <activity android:name=".Pemesanan" />
+        <activity android:name=".CaraPembayaran" />
+        <activity android:name=".konfirmasi.TiketSementara" />
+        <activity
+            android:name=".konfirmasi.HistoryBooking"
+            android:label="Riwayat Pemesanan" />
+        <activity android:name=".konfirmasi.DetailBooking" />
+        <activity android:name=".konfirmasi.ConfirmActivity" />
+        <activity android:name=".Kontak" />
+        <activity android:name=".fragment_help_about.TentangBis" />
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Riwayat dan Konfirmasi Pemesanan"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:freezesText="false"
+            android:text="1. Setelah memesan bis, anda dapat melihat riwayat pemesanan.
+            \n\n2. Pilih Konfirmasi Pemesanan dan perhatikan tanggal pesan untuk melihat detail pemesanan.
+            \n\n3. Membayar pesanan dengan tekan tombol konfirmasi.
+            \n\n4. Konfirmasi berhasil jika uang transfer sama dengan total harga pesan.
+            \n\n5. Kemudian tekan tombol cetak tiket.
+            \n\n6. Anda dapat melihat dan mencetak tiket berupa file .pdf dan tersimpan dalam storage folder hj_bus."
+            android:textAlignment="gravity"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
