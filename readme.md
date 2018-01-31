@@ -11,7 +11,7 @@
 * Yudhistira Yoga S
 * Ike Safitri
 * Tri Utami
-* Riski Puspita
+* Rhandy Sarwatatwadhika
 
 
 ## Mini Project 
