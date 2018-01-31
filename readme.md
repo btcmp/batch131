@@ -15,6 +15,6 @@
 
 
 ## Mini Project 
-* Resto see on [playstore!](https://play.google.com/store/apps/details?id=com.bootcamp.xsis.keta)
-* Cinema see on [playstore!](https://play.google.com/store/apps/details?id=com.xsis.cinemax)
-* Bus Order see on [playstore!](https://play.google.com/store/apps/details?id=com.xsis.hjbusbooking)
+* Resto => [playstore](https://play.google.com/store/apps/details?id=com.bootcamp.xsis.keta)
+* Cinema => [playstore](https://play.google.com/store/apps/details?id=com.xsis.cinemax)
+* Bus Order => [playstore](https://play.google.com/store/apps/details?id=com.xsis.hjbusbooking)
