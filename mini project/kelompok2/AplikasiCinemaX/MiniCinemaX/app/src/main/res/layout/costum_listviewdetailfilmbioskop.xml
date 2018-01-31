@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/icon_image"
+        android:paddingTop="10dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/deadpool1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textJudul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="The Winter Soldier"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textJam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Jam Tayang:"
+            android:textAlignment="viewStart"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textJamtayang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="11.00, 12.00, 13.00, 14.00"
+            android:textAlignment="viewStart"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

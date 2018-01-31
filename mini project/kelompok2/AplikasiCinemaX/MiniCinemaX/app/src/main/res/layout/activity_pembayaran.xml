@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.cinemax.cinemax.PembayaranActivity">
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray"
+        android:text="PESAN TIKET"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView36"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="68dp"
+        android:layout_toStartOf="@+id/textView36"
+        android:text="NAMA FILM" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView30"
+        android:layout_below="@+id/textView30"
+        android:layout_marginTop="11dp"
+        android:text="BIOSKOP" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_below="@+id/textView31"
+        android:layout_marginTop="9dp"
+        android:text="HARGA" />
+
+    <TextView
+        android:id="@+id/hargaTiket1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView30"
+        android:layout_marginEnd="52dp"
+        android:text="TextView"
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/jumlahTiket1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView31"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_alignStart="@+id/hargaTiket1"
+        android:gravity="right"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/total1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView32"
+        android:layout_alignBottom="@+id/textView32"
+        android:layout_alignStart="@+id/jumlahTiket1"
+        android:text="TextView"
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView29"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:text="KODE BOOKING"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/kodebooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hargaTiket1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="0000"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView26"
+        android:layout_marginTop="58dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Pilih Metode Pembayaran" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView32"
+        android:layout_below="@+id/textView32"
+        android:layout_marginTop="9dp"
+        android:text="JAM TAYANG" />
+
+    <TextView
+        android:id="@+id/jamtayang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignStart="@+id/total1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="8dp"
+        android:text="TIKET KURSI" />
+
+    <TextView
+        android:id="@+id/tiketkursi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignStart="@+id/jamtayang"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="7dp"
+        android:text="TOTAL BIAYA" />
+
+    <TextView
+        android:id="@+id/totalbiaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tiketkursi"
+        android:layout_alignTop="@+id/textView26"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_below="@+id/textView26"
+        android:layout_marginTop="10dp"
+        android:text="TANGGAL" />
+
+    <TextView
+        android:id="@+id/tanggal_film"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignStart="@+id/totalbiaya"
+        android:text="TextView" />
+
+</RelativeLayout>

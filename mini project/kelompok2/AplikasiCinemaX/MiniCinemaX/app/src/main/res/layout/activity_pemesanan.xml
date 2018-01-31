@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp"
+    android:paddingTop="75dp"
+    tools:context="com.example.android.cinemax.cinemax.PemesananActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PEMESANAN"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Judul"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Tempat"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Jam"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Harga"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Tanggal"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewJudul"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Judul Film"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewBioskop"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Tempat Bioskop"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerJam"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/textViewHarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Harga"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date" />
+
+                <Button
+                    android:id="@+id/buttonPesan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/holo_green_dark"
+                    android:text="Pesan" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
